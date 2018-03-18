@@ -1,0 +1,35 @@
+h1 {
+  color: #0b1628;
+}
+h3 {
+  color: #0b1628;
+
+
+}
+.container{
+  margin: 10%;
+  margin-top: 3%;
+  margin-right: 20%;
+  font-size: 150%;
+}
+.info{
+  background-color: #2196F3;
+  padding: 2%;
+  font-size: 110%;
+}
+.jumbotron{
+  background-color: #4b81d8;
+  padding-left: 40%;
+  color: white;
+}
+.quote{
+  padding-top: 5%;
+  background-color:#c6c49d;
+  padding-bottom: 20%;
+}
+.form{
+  padding-top: 5%;
+  background-color: #638e81;
+  padding-bottom: 20%;
+
+}
