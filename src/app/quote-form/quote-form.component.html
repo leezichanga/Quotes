@@ -3,7 +3,7 @@
 </p> -->
 <form (ngSubmit)='submitQuote()' #quoteForm = 'ngForm'>
   <!--Author Input-->
-  <h3>AUTHOR: </h3>
+  <h3>AUTHOR NAME: </h3>
   <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel">
   <!--Testing to see if we get data
   Display {{newQuote.author}}-->
@@ -11,9 +11,9 @@
       <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
         <p>Authors name is required!</p>
       </div>
-    
+
   <!--Quote Input-->
-  <h3>QUOTE: </h3>
+  <h3>INPUT QUOTE: </h3>
   <textarea class="form-control" id="quote" rows="3" [(ngModel)]="newQuote.name" name="quote" #quote="ngModel" required></textarea>
         <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
           <p>Quote is required</p>

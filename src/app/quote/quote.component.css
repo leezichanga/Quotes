@@ -4,7 +4,6 @@ h1 {
 h3 {
   color: #0b1628;
 
-
 }
 .container{
   margin: 10%;
@@ -24,12 +23,16 @@ h3 {
 }
 .quote{
   padding-top: 5%;
-  background-color:#c6c49d;
+  background-color:#cdd1a1;
   padding-bottom: 20%;
 }
 .form{
   padding-top: 5%;
-  background-color: #638e81;
+  background-color: #4b8c86;
   padding-bottom: 20%;
+  text-align: left;
 
+}
+.btn{
+  color: cyan;
 }
