@@ -12,7 +12,7 @@
   <div *ngFor='let quote of quotes;let i=index'>
     <li id="{{i}}" >{{quote.name}} written on {{quote.completeDate|date|uppercase}}</li>
     <app-vote></app-vote>
-    <button (click)='toogleDetails(i)' class="btn info">More Info</button>
+    <button (click)='toogleDetails(i)' class="btn info">Details</button>
     <app-quote-details *ngIf="quote.showAuthor" [quote]='quote'
     (isComplete)='deleteQuote($event,i)'></app-quote-details>
 </div>
