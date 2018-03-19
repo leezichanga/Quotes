@@ -1,7 +1,7 @@
 <!-- <p>
   quote works!
 </p> -->
-<div class="jumbotron"><h1>"MOTIVATIONAL AND INSPIRATIONAL QUOTES"</h1></div>
+<div class="jumbotron"><h1>POPULAR QUOTES</h1></div>
 <div class="container">
 <div class="row">
 <div class="col-md-6 form">
@@ -10,7 +10,7 @@
 <div class="col-md-6 quote">
 <ul>
   <div *ngFor='let quote of quotes;let i=index'>
-    <li id="{{i}}" appUnderline>{{quote.name}}</li>
+    <li id="{{i}}" >{{quote.name}} written on {{quote.completeDate|date|uppercase}}</li>
     <app-vote></app-vote>
     <button (click)='toogleDetails(i)' class="btn info">More Info</button>
     <app-quote-details *ngIf="quote.showAuthor" [quote]='quote'

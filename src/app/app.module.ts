@@ -5,10 +5,10 @@ import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { VoteComponent } from './vote/vote.component';
-import { UnderlineDirective } from './underline.directive';
-import { DateCountPipe } from './date-count.pipe';
+
 
 
 @NgModule({
@@ -17,13 +17,13 @@ import { DateCountPipe } from './date-count.pipe';
     QuoteComponent,
     QuoteDetailsComponent,
     QuoteFormComponent,
+      DateCountPipe,
     VoteComponent,
-    UnderlineDirective,
-    DateCountPipe
+
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+        FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

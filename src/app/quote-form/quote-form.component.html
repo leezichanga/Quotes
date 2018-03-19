@@ -9,17 +9,24 @@
   Display {{newQuote.author}}-->
 
       <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-        <p>Authors name is required!</p>
+        <p>Please input author!</p>
       </div>
 
   <!--Quote Input-->
   <h3>INPUT QUOTE: </h3>
   <textarea class="form-control" id="quote" rows="3" [(ngModel)]="newQuote.name" name="quote" #quote="ngModel" required></textarea>
         <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
-          <p>Quote is required</p>
+          <p>Please input quote!</p>
         </div>
 
-
+        <!--Date Input-->
+        <div class="form-control">
+          <label for="complete">Completion</label>
+          <input type='Date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
+          <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+                <p>Please input date!</p>
+              </div>
+            </div>
   <!--Submit Button-->
   <button type="submit" class="btn btn-success btn-lg">Add Quote</button>
 </form>
