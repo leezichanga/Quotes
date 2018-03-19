@@ -18,8 +18,7 @@ h3 {
 }
 .jumbotron{
   background-color: #4b81d8;
-  padding-left: 40%;
-  color: white;
+  color: #0f0528;
   text-align: center;
 }
 .quote{
@@ -36,4 +35,6 @@ h3 {
 }
 .btn{
   color: cyan;
+  background-color: #071b4f;
+
 }

@@ -21,7 +21,7 @@
 
         <!--Date Input-->
         <div class="form-control">
-          <label for="complete">Date Quoted</label>
+          <label for="complete"><h4><b>DATE QUOTED:</b></h4></label>
           <input type='Date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
           <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
                 <p>Please input date!</p>
